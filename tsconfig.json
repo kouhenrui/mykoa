@@ -1,0 +1,27 @@
+// {
+//     "compilerOptions": {
+//       "target": "ES6",
+//       "module": "commonjs",
+//       "outDir": "dist",
+//       "strict": true
+//     },
+//     "include": ["src"]
+//   }
+{
+  "compilerOptions": {
+    "target": "es6",                     // Specify the ECMAScript target version
+    "module": "commonjs",                // Specify the module system (e.g., commonjs, esnext)
+    "strict": true,                      // Enable strict type-checking and additional compiler checks
+    "esModuleInterop": true,             // Allow default imports from modules with no default export
+    "outDir": "./dist",                  // Output directory for compiled JavaScript files
+    // "rootDir": "./src",                  // Root directory for TypeScript source files
+    "sourceMap": true,                   // Generate source maps for better debugging experience
+    "resolveJsonModule": true,           // Enable importing JSON files as modules
+    "lib": ["es6", "dom"],               // Specify the libraries to be included in the compilation
+    "declaration": true,                // Generate corresponding .d.ts files for TypeScript files
+    "declarationDir": "./typings",       // Output directory for .d.ts declaration files
+    "allowJs": true                      // Allow JavaScript files to be compiled
+  },
+  "include": ["src","./main.ts"],                    // Specify the files to be included in the compilation
+  "exclude": ["node_modules"]            // Specify the files to be excluded from the compilation
+}
