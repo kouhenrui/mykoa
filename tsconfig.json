@@ -23,5 +23,5 @@
     "allowJs": true                      // Allow JavaScript files to be compiled
   },
   "include": ["src","./main.ts"],                    // Specify the files to be included in the compilation
-  "exclude": ["node_modules"]            // Specify the files to be excluded from the compilation
+  "exclude": ["node_modules","dist"]            // Specify the files to be excluded from the compilation
 }
